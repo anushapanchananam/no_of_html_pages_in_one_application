@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday</title>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		#one
+		{
+			width: 300px;
+			height: 400px;
+			top: 100px;
+			left: 400px;
+			position: relative;
+			color: white;
+		}
+		#one>#photo
+		{
+			width: 200px;
+			height: 200px;
+			top:10px;
+			background-image: url(https://starsunfolded.com/wp-content/uploads/2017/04/Nithiin.jpg);
+			background-size: cover;
+			position: relative;
+			border-radius: 100%;
+			animation: rotate 3s linear 0s infinite normal;
+		}
+		#One>#two
+		{
+			position: relative;
+			top: 17px;
+			left: 187px;
+			font-size: 20px;
+			animation: jsp 1s linear 0s 1 normal;
+
+		}#one>#three
+		{
+			position: relative;
+			top: 100%
+			left:187px;
+			font-size: 20px;
+			animation: abc 1s linear 0s 1 normal;
+		}
+		@keyframes rotate
+		{
+			0%
+			{
+				transform: rotate(0deg);
+			}
+			25%
+			{
+				transform: rotate(90deg);
+			}
+			50%
+			{
+				transform: rotate(180deg);
+			}
+			75%
+			{
+				transform: rotate(270deg);
+			}
+			100%
+			{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes jsp
+		{
+			0%
+			{
+				top: 17%
+				left:200%;
+			}
+		}
+		@keyframes abc
+		{
+			0%
+			{
+				top: -24%
+				left : 200px;
+			}
+			100%
+			{
+				top : 100px;
+				left : 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+      <div id="one">
+      <div id="photo"></div>
+      <p id="two">HAPPY BIRTHDAY</p>
+      <p id="three">NITHIN</p>
+      </div>
+</body>
+</html>

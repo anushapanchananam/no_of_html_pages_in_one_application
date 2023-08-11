@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Information</title>
+</head>
+<style>
+	body{
+		background-color: yellow;
+	}
+	table{
+		width: 100%;
+	}
+	fieldset{
+		border: 3px solid blue;
+		padding: 50px;
+		background-color: rgba(0, 0, 225, 0.4);
+	}
+	fieldset>legend{
+		border: 1px solid red;
+		padding: 10px 20px;
+		border-radius: 0px 30px 0px 30px;
+		font-family: "comic sans ms", sans-serif;
+		background: linear-gradient(45deg, darkslategray, darkred);
+	}
+</style>
+<body>
+	<h> online application form</h>
+	<div>
+		<form>
+			<fieldset>
+				<legend>Personal Information</legend>
+				<table>
+					<tr>
+						<td><label>firstname</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>middlename</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>lastname</label></td>
+						<td><input type="text" name=""></td>
+					</tr>
+					<tr>
+						<td>Father's name</td>
+						<td><input type="text"></td>
+						<td><label>Mother's name</label></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>Current Address</td>
+						<td><input type="text"></td>
+						<td>Permanent Address</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>phone number</td>
+					</tr>
+					<tr>
+						<td>landline number</td>
+						<td><input type="text"></td>
+						<td>Mobile number</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td colspan="2">select gender</td>
+						<td><input type="radio" name="gender">male</td>
+						<td><input type="radio" name="gender">female</td>
+					</tr>
+					<tr>
+						<td>Highest Qualification</td>
+						<td><input type="text"></td>
+						<td>year of passing</td>
+						<td><input type="date"></td>
+					</tr>
+					<tr>
+						<td colspan="2">Known Languages</td>
+						<td><input type="checkbox">"telugu"</td>
+						<td><input type="checkbox">"english"</td>
+						<td><input type="checkbox">"tamil"</td>
+					</tr>
+					<tr>
+						<td colspan="2">select your hobbies</td>
+						<td><input type="checkbox">"eating"</td>
+						<td><input type="checkbox">"coding"</td>
+						<td><input type="checkbox">"sleeping"</td>
+					</tr>
+					<tr>
+						<td>About your self</td>
+						<td colspan="4"><textarea rows="4" cols="80"></textarea></td>
+					</tr>
+					<tr>
+						<td>Nationality</td>
+						<td>
+							<select>
+								<option>India</option>
+								<option>America</option>
+								<option>Others</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<tr>
+							<td>Adhar card number</td>
+							<td><input type="number"></td>
+							<td>pan card number</td>
+							<td><input type="number"></td>
+						</tr>
+				</table>
+			</fieldset>
+			<!--Education Details-->
+			<fieldset>
+				<legend>Other Details</legend>
+				<table>
+					<tr>
+						<td>Job type</dh>
+						<td><input type="radio" name="jobtype">permanent</td>
+						<td><input type="radio" name="jobtype">contract</td>
+						<td><input type="radio" name="jobtype">other</td>
+					</tr>
+					<tr>
+						<td>Date of joining</td>
+						<td><input type="date"></td>
+						<td><input type="time"></td>
+					</tr>
+					<tr>
+						<td>Prefered Job Location</td>
+						<td><input type="radio" name="Location">Hyderbad</td>
+						<td><input type="radio" name="Location">Bangalore</td>
+						<td><input type="radio" name="Location">Others</td>
+					</tr>
+					<tr>
+						<td>Willing relocate to Hyderbad?</td>
+						<td><input type="radio" name="relocate">yes</td>
+						<td><input type="radio" name="relocate">no</td>
+					</tr>
+					<tr>
+						<td colspan="4"><input type="checkbox">
+						<span> I am here declaring that all the above mentioned information is per my knowledge</span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit"></td>
+						<td><input type="reset"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

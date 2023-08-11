@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Transforms</title>
+	<style>
+		div
+		{
+			width: 200px;
+			height: 250px;
+			margin: 200px auto;
+			box-shadow: 0 0 10px black;
+			background-color: black;
+			position: relative;
+
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+			position: absolute;
+		}
+		div:hover>#a
+		{
+			transform: translateY(250px);
+		}
+		div>#a
+		{
+		    transition: all 1s linear 0s;
+		}
+		div:hover>#b
+		{
+			transform: translateX(200px);
+		}
+		div>#b
+		{
+		    transition: all 1s linear 0s;
+		}
+		div:hover>#c
+		{
+			transform: translateX(-200px);
+		}
+		div>#c
+		{
+		    transition: all 1s linear 0s;
+		}
+		div:hover>#d
+		{
+			transform: translateY(-250px);
+		}
+		div>#d
+		{
+			transition: all 1s linear 0s;
+		}
+		h1
+		{
+			position:absolute;
+			color: aqua;
+		}
+	</style>
+</head>
+<body>
+     <div>
+     	<h1>Magic</h1>
+     	
+     	<img id="b" src="{% static 'images/23.jpg'%}">
+     	<img id="a" src="{% static 'images/24.jpg'%}">
+     	<img id="c" src="{% static 'images/25.jpg'%}">
+     	<img id="d" src="{% static 'images/26.jpg'%}">
+     </div>
+</body>
+</html>

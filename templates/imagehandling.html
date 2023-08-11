@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Handling</title>
+</head>
+<body>
+      <h1>Matrimonal Info</h1>>
+      <table border="1px" cellpadding="10px">
+      	<tr>
+      		<th>S.No</th>
+      		<th>Name</th>
+      		<th>Age</th>>
+      		<th>Sal</th>>
+      		<th>Image</th>
+      	</tr>>
+      	<tr>
+      		<td>01</td>>
+      		<td>Anusha</td>
+      		<td>22</td>>
+      		<td>30,000</td>
+                  <td><img src="{% static 'images/29.jpeg'%}" width="50px" height="50px"></td>>
+      		
+      	</tr>>
+      	<tr>
+      		<td>02</td>>
+      		<td>Vyshnavi</td>
+      		<td>18</td>
+      		<td>25,000</td>
+      		<td><img src="{% static 'images/35.jpg'%}" width="50px" height="50px"></td> 
+      	</tr>
+      </table>
+</body>
+</html>
